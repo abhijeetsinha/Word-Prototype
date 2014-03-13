@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestWord4" >
+    
+<!-- *******************   TABS     ************************-->
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/word_logo" />
+
+        <Button
+            android:id="@+id/button_file"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+           	android:background="#357ec7"
+            android:text="@string/file" 
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/button_home"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:text="@string/home" />
+
+        <Button
+            android:id="@+id/button_insert"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:text="@string/insert" />
+
+        <Button
+            android:id="@+id/button_layout"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:text="@string/layout" />
+
+        <Button
+            android:id="@+id/button_review"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:text="@string/review" />
+
+        <Button
+            android:id="@+id/button_view"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:text="@string/view" />
+
+        <Button
+            android:id="@+id/button_notext"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="#d3d3d3"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/no_text"
+            />
+
+        <Button
+            android:id="@+id/button_filename"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:text="@string/filename" />
+
+        <ImageButton
+            android:id="@+id/button_mode"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:src="@drawable/readmode" />
+
+        <ImageButton
+            android:id="@+id/button_share"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:src="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/button_undo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:src="@drawable/undo" />
+    </LinearLayout>
+
+<!-- ***************     RIBBONS     ************************** -->    
+    
+    <include
+        android:id="@+id/ribbon_entry"
+        layout="@layout/ribbon_home" />
+
+<!-- ****************      WRTITING CANVAS     *************** -->
+    
+    <RelativeLayout 
+        android:id="@+id/canvas"
+        	android:layout_height="match_parent"
+        	android:layout_width="match_parent"
+        	android:layout_marginTop="0dp">
+        <EditText
+		    android:id="@+id/editor"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:padding="15dip"
+		    android:scrollbars="vertical"
+		    android:gravity="top"
+		    android:textSize="16sp"/>
+
+	    <ImageButton
+	        android:id="@+id/button_keyboardlock"
+	        style="?android:attr/borderlessButtonStyle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="35dp"
+	        android:src="@drawable/keyboardlock" />
+
+	    <ImageButton
+	        android:id="@+id/button_keyboardunlock"
+	        style="?android:attr/borderlessButtonStyle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:src="@drawable/keyboardunlock" />
+
+	    <ImageView
+	        android:id="@+id/keyboardicon_up"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:src="@drawable/keyboard_invoke" />
+	  
+    </RelativeLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	
+    <LinearLayout
+        	android:id="@+id/layout_ribbon"
+        	android:layout_height="wrap_content"
+        	android:layout_width="fill_parent"
+        	android:layout_marginTop="10dp">
+        
+        <ImageButton 
+            android:id="@+id/button_margins"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/margins"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_orientation"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/orientation"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_size"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/size"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_columns"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/columns"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_breaks"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/breaks"
+    		style="?android:attr/borderlessButtonStyle"/>
+   
+    </LinearLayout>
+    
+   <LinearLayout
+        android:id="@+id/bold_ribbon_lines"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <View
+		    android:layout_width="320dp"
+		    android:layout_height="1dip"
+		    android:background="#111111"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="20dp" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/bold_ribbon_categories"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    
+        <TextView 
+            android:text="@string/pagesetup"
+            android:textSize="12sp"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

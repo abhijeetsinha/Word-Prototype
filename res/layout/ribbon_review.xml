@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	
+    <LinearLayout
+        	android:id="@+id/insert_review"
+        	android:layout_height="wrap_content"
+        	android:layout_width="fill_parent"
+        	android:layout_marginTop="10dp">
+        
+        <ImageButton 
+            android:id="@+id/button_proofing"
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/spelling"
+    		android:layout_marginLeft="10dp"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_newcomment"
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/newcomment"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_deletecomment"
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/deletecomment"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_markasdone"
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/markasdone"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_nextcomment"
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/nextcomment"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_previouscomment"
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/previouscomment"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_trackchanges"
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/trackchanges"
+    		style="?android:attr/borderlessButtonStyle"/>
+        
+        <ImageButton 
+            android:id="@+id/button_accept"
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/accept"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_reject"
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/reject"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_next"
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/next"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_previous"
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/previous"
+    		style="?android:attr/borderlessButtonStyle"/>
+        
+    </LinearLayout>
+    
+   <LinearLayout
+        android:id="@+id/insert_ribbon_lines"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <View
+            android:layout_marginLeft="5dp"
+		    android:layout_width="60dp"
+		    android:layout_height="1dip"
+		    android:background="#111111"
+		    android:layout_marginRight="10dp" />
+        <View 
+            android:layout_width="230dp"
+            android:layout_height="1dip"
+            android:background="#000000"
+            android:layout_marginRight="20dp"/>
+        <View 
+            android:layout_width="240dp"
+            android:layout_height="1dip"
+            android:background="#000000"
+            android:layout_marginRight="20dp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/insert_ribbon_categories"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    
+        <TextView 
+            android:text="@string/proofing"
+            android:textSize="12sp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+        <TextView 
+            android:text="@string/comments_review"
+            android:textSize="12sp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"/>
+        <TextView 
+            android:text="@string/changes"
+            android:textSize="12sp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"/>
+        
+    </LinearLayout>
+
+
+</LinearLayout>

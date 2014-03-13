@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	
+    <LinearLayout
+        	android:id="@+id/view_ribbon"
+        	android:layout_height="wrap_content"
+        	android:layout_width="fill_parent"
+        	android:layout_marginTop="10dp">
+        
+        <ImageButton 
+            android:id="@+id/button_readmode"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/readmode"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_editmode"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/editmode"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_zoomto100"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/zoomto100"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <Button 
+            android:id="@+id/button_zoomto200"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/zoomto200"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_wholepage"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/wholepage"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_pagewidth"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/pagewidth"
+    		style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton 
+            android:id="@+id/button_hideribbon"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/hideribbon"
+    		style="?android:attr/borderlessButtonStyle"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/insert_ribbon_lines"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <View
+            android:layout_marginLeft="10dp"
+		    android:layout_width="110dp"
+		    android:layout_height="1dip"
+		    android:background="#111111"
+		    android:layout_marginRight="20dp" />
+        <View 
+            android:layout_width="235dp"
+            android:layout_height="1dip"
+            android:background="#000000"
+            android:layout_marginRight="20dp"/>
+        <View 
+            android:layout_width="50dp"
+            android:layout_height="1dip"
+            android:background="#000000"
+            android:layout_marginRight="20dp"/>
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/insert_ribbon_categories"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    
+        <TextView 
+            android:text="@string/views"
+            android:textSize="12sp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"/>
+        <TextView 
+            android:text="@string/zoom"
+            android:textSize="12sp"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"/>
+        <TextView 
+            android:text="@string/ribbon"
+            android:textSize="12sp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"/>
+       
+    </LinearLayout>
+
+
+</LinearLayout>
