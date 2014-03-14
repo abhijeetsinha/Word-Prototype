@@ -87,6 +87,8 @@ public class MyFragment2 extends Activity {
 			}
 		}
 		
+		
+		
 	
 		/*public View getView(int position, View convertView, ViewGroup parent){
 			View v = super.getView(position,convertView,parent);

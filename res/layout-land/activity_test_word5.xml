@@ -1,9 +1,13 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TestWord4" >
+    tools:context=".TestWord5" >
     
 <!-- *******************   TABS     ************************-->
 
@@ -161,6 +165,31 @@
 	        android:src="@drawable/keyboard_invoke" />
 	  
     </RelativeLayout>
-    
 
 </LinearLayout>
+
+<LinearLayout android:id="@+id/floating_view" 
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" >
+	    <ImageButton 
+	        	android:id="@+id/contextmenu_cut"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	style="?android:attr/borderlessButtonStyle"
+	        	android:src="@drawable/cut"/>
+	 	<ImageButton 
+	 	    	android:id="@+id/contextmenu_copy" 
+	        	android:layout_width="wrap_content" 
+	        	android:layout_height="wrap_content" 
+	            style="?android:attr/borderlessButtonStyle"
+	            android:src="@drawable/copy"  /> 
+	 	<ImageButton
+	 	    	android:id="@+id/contextmenu_paste" 
+	           	android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            style="?android:attr/borderlessButtonStyle"
+	            android:src="@drawable/paste" /> 
+</LinearLayout>
+
+</FrameLayout>

@@ -42,6 +42,9 @@
     <string name="ribbon">RIBBON</string>
     <string name="zoomto200">200%</string>
     <string name="pagesetup">PAGE SETUP</string>
+    <string name="cut">Cut</string>
+    <string name="copy">Copy</string>
+    <string name="paste">Paste</string>
     
     <string-array name="spinner_fontface">
         <item>Calibri</item>

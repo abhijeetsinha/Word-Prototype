@@ -13,8 +13,10 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -32,7 +34,7 @@ public class TestWord5 extends Activity {
 	private Button layout;
 	private Button review;
 	private Button view;
-	
+	private EditText editor;
 	private ImageButton keyboardlock;
 	private ImageButton keyboardunlock;
 	private ImageView keyboard;
@@ -70,6 +72,19 @@ public class TestWord5 extends Activity {
 		adapter_textstyles.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		textStyles.setAdapter(adapter_textstyles);
 	
+		editor = (EditText) findViewById(R.id.editor);
+	    LinearLayout floatView = (LinearLayout) findViewById(R.id.floating_view);
+	    floatView.setVisibility(LinearLayout.GONE);
+	    /*floatView.setX(300);
+	    floatView.setY(300);
+	    editor.setLongClickable(true);
+	    editor.setOnLongClickListener(new OnLongClickListener(){
+	        public boolean onLongClick(View v){
+	            ((EditText)v).setText("");
+	            return true;
+	        }
+	    });*/
+		
 		file.setOnClickListener(new OnClickListener(){
 
 			@Override
@@ -241,6 +256,8 @@ public class TestWord5 extends Activity {
 			}
 			
 		});
+		
+		
 	}
 
 	@Override
